@@ -43,9 +43,9 @@ components:
           format: uuid
           description: Unikt ID som kopplar ihop request & response
 
-    RegelRequestMessageData:
+    RegelRequestMessagePayloadData:
       type: object
-      title: RegelRequestMessageData
+      title: RegelRequestMessagePayloadData
       required:
         - kundbehovsflodeId
       properties:
@@ -62,9 +62,9 @@ components:
           format: uuid
           description: Unikt ID som kopplar ihop request & response
 
-    RegelResponseMessageData:
+    RegelResponseMessagePayloadData:
       type: object
-      title: RegelResponseMessageData
+      title: RegelResponseMessagePayloadData
       required:
         - kundbehovsflodeId
         - rattTillForsakring
@@ -90,12 +90,12 @@ components:
         allOf:
           - $ref: "kogito-cloudevent.yaml#/components/schemas/KogitoCloudEvent"
           - type: object
-            title: RegelRequestMessageData
+            title: RegelRequestMessagePayloadData
             required:
               - data
             properties:
               data:
-                $ref: "#/components/schemas/RegelRequestMessageData"
+                $ref: "#/components/schemas/RegelRequestMessagePayloadData"
 
     RegelResponseMessage:
       headers:
@@ -105,10 +105,10 @@ components:
         allOf:
           - $ref: "kogito-cloudevent.yaml#/components/schemas/KogitoCloudEvent"
           - type: object
-            title: RegelResponseMessageData
+            title: RegelResponseMessagePayloadData
             required:
               - data
             properties:
               data:
-                $ref: "#/components/schemas/RegelResponseMessageData"
+                $ref: "#/components/schemas/RegelResponseMessagePayloadData"
 
