@@ -1,3 +1,9 @@
+## 0.1.1 (2026-01-20)
+
+### Bug Fixes
+
+-  renaming to MessagePayloadData ([bc213](https://github.com/Forsakringskassan/rimfrost-regel-common-asyncapi/commit/bc2135ffb72f6ca) Ulf Slunga)  
+
 # rimfrost-regel-common-asyncapi changelog
 
 Changelog of rimfrost-regel-common-asyncapi.
