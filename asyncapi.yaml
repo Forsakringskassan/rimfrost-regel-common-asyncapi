@@ -80,6 +80,7 @@ components:
           enum:
             - Ja
             - Nej
+            - Utredning
 
   messages:
     RegelRequestMessage:
