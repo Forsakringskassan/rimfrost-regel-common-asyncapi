@@ -67,14 +67,14 @@ components:
       title: RegelResponseMessagePayloadData
       required:
         - kundbehovsflodeId
-        - rattTillForsakring
+        - utfall
       properties:
         kundbehovsflodeId:
           type: string
           format: uuid
           description: Kundbehovsflöde id
-        rattTillForsakring:
-          title: rattTillForsakring
+        utfall:
+          title: utfall
           type: string
           description: Utfall av regel, om personen har rätt till försäkring
           enum:
