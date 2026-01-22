@@ -76,7 +76,7 @@ components:
         utfall:
           title: utfall
           type: string
-          description: Utfall av regel, om personen har rätt till försäkring
+          description: Utfall av regel, t.ex. om personen har rätt till försäkring
           enum:
             - Ja
             - Nej
